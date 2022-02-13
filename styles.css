@@ -16,16 +16,16 @@ img {
 }
 
 header {
-    font-size: 30px;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
 p {
-    font-size: 13px;
+    font-size: 0.9rem;
 }
 
 ul {
-    font-size: 13px;
+    font-size: 0.9rem;
 }
 
 #navbar {
@@ -71,7 +71,7 @@ ul {
 }
 
 .nav-link {
-    font-size: 25px;
+    font-size: 1.5rem;
     color: var(--white);
 }
 
