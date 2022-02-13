@@ -1,14 +1,21 @@
 :root {
-    --blue: #1e90ff;
-    --white: #fff;
+    --powderblue: #BEE3DB;
+    --cultured: #FAF9F9;
     --black: #000;
+    --morningblue: #89B0AE;
+    --independence: #555B6E;
+    --lightcyan: #D4EDE7;
 }
 
 body {
     margin: 0;
     padding-top: 170px;
-    background-color: var(--blue);
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--lightcyan);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
 }
 
 img {
@@ -16,16 +23,16 @@ img {
 }
 
 header {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
 p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 
 ul {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 
 #navbar {
@@ -33,24 +40,27 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
-    height: 170px;
+    height: 200px;
     width: 100%;
     top: 0;
     color: var(--black);
-    background-color: var(--white);
+    background-color: var(--morningblue);
 }
 
 #top-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 120px;
+    height: 130px;
     padding: 0 15px;
 }
 
-#top-5-reasons {
+#visit-south-africa {
     text-align: center;
-    font-size: 45px;
+    font-size: 5rem;
+    text-shadow: 5px 5px 10px var(--cultured);    
+    font-weight: 900;
+    font-family: 'Rowdies', cursive;
 }
 
 #img-container {
@@ -59,8 +69,9 @@ ul {
 }
 
 #nav-link-container {
-    height: 50px;
-    background-color: var(--black);
+    height: 70px;
+    background-color: var(--independence);
+    border-color: var(--cultured);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -70,12 +81,62 @@ ul {
     padding: 0 15px;
 }
 
+.content-images {
+border-radius: 8px;
+max-width: 900px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
 .nav-link {
-    font-size: 1.5rem;
-    color: var(--white);
+    font-size: 1.8rem;
+    color: var(--cultured);
 }
 
 .main-section {
     margin-top: 15px;
     padding-top: 25px;
+}
+
+@media (min-width: 1200px) {
+    body {
+        margin: 0;
+        padding-top: 0px;
+        padding-left: 300px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: var(--lightcyan);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
+    #navbar {
+        flex-direction: column;
+        /* justify-content: space-between; */
+        position: fixed;
+        height: 100%;
+        width: 300px;
+        top: 0;
+        left: 0;
+        color: var(--black);
+        background-color: var(--morningblue);
+    }
+    #top-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 300px;
+        padding: 0 15px;
+    }
+    #nav-link-container {
+        height: 300px;
+        background-color: var(--independence);
+        border-color: var(--cultured);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
