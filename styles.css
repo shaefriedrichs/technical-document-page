@@ -1,0 +1,81 @@
+:root {
+    --blue: #1e90ff;
+    --white: #fff;
+    --black: #000;
+}
+
+body {
+    margin: 0;
+    padding-top: 170px;
+    background-color: var(--blue);
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 13px;
+}
+
+ul {
+    font-size: 13px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    height: 170px;
+    width: 100%;
+    top: 0;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+#top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 0 15px;
+}
+
+#top-5-reasons {
+    text-align: center;
+    font-size: 45px;
+}
+
+#img-container {
+    width: 100px;
+    height: 100px;
+}
+
+#nav-link-container {
+    height: 50px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#main-doc {
+    padding: 0 15px;
+}
+
+.nav-link {
+    font-size: 25px;
+    color: var(--white);
+}
+
+.main-section {
+    margin-top: 15px;
+    padding-top: 25px;
+}
